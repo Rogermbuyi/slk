@@ -1,0 +1,411 @@
+/* Global Styles */
+html, body{
+    height: 100%;
+}
+body {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 50px;
+	font-family: Arial, sans-serif;
+	color: #333;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+	color: #333;
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Header */
+header {
+  background-image: url(header1.webp);
+	border-bottom: 0px solid #ccc;
+	padding: 20px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+header h1 {
+  text-shadow: 2px 2px 4px red;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+	margin: 0;
+	font-size: 36px;
+}
+
+small{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: small;
+}
+
+header nav ul {
+	float: right;
+    color: white;
+}
+
+header nav ul li {
+
+	display: inline-block;
+	margin-left: 20px;
+}
+
+header nav ul li:first-child {
+    margin-left: 0 ;
+}
+
+header nav ul li a:hover {
+    
+	border-bottom: 2px solid #333;
+}
+
+a{
+    color: white;
+}
+
+.activity{
+  margin-top: 40px;
+}
+
+
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.activity-grid img {
+  display: block;
+  width: 400px;
+  height: 400px;
+}
+
+
+
+/* Main */
+main {
+	margin-top: 80px;
+	padding: 40px;
+}
+
+
+section {
+	margin-bottom: 40px;
+}
+
+section h2 {
+	margin-top: 0;
+	font-size: 28px;
+}
+
+section p {
+	margin: 10px 0;
+}
+
+section ul li {
+	margin-bottom: 10px;
+}
+
+.cta {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border-radius: 5px;
+}
+
+.cta:hover {
+	background-color: #555;
+}
+
+/* Hero Section */
+#hero {
+	background-image: url("");
+  background-image: url(fslkk.png);
+  background-repeat: no-repeat;
+  background-position: center;
+	background-size: cover;
+	text-align: center;
+	padding: 100px 0;
+}
+
+#hero h2 {
+	color: red;
+	font-size: 48px;
+	margin-bottom: 20px;
+  text-shadow: 2px 2px 4px blue;
+}
+h4{
+    color: black;
+    font-size: medium;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Programs Section */
+#programs ul li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+/* Events Section */
+#events ul li {
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+#events ul li h3 {
+	margin-top: 0;
+	font-size: 24px;
+}
+
+#events ul li p {
+	margin: 10px 0;
+}
+
+#events ul li a {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+#events ul li a:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+/* Contact Section */
+#contact label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+	display: block;
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+}
+
+.contactus{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#contact input[type="submit"] {
+	display: block;
+	padding: 10px 20px;
+	background-color: #333;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#contact input[type="submit"]:hover {
+	background-color: #555;
+}
+
+
+
+/* Contact Section */
+#get-in-touch {
+    color: black;
+    background-repeat: none;
+    background-size: cover;
+    max-width: 300px; /* set a maximum width for the section */
+    margin: 0 auto; /* center the section horizontally */
+    text-align: center; /* center the input boxes vertically */
+  }
+  
+  #get-in-touch form {
+    display: inline-block; /* make the form inline-block to center it horizontally */
+  }
+  
+  #get-in-touch div {
+    margin-top: 20px; /* add a 20px margin between each input box */
+  }
+  
+  #get-in-touch label {
+    display: block; /* display each label on a new line */
+    text-align: left; /* left-align the label text */
+  }
+  
+  #get-in-touch input,
+  #get-in-touch textarea {
+    width: 100%; /* set the width of the input fields to 100% */
+    padding: 10px; /* add some padding to the input fields */
+    box-sizing: border-box; /* include padding and border in the total width of the input fields */
+    border-radius: 4px; /* add rounded corners to the input fields */
+    border: 1px solid #ccc; /* add a border to the input fields */
+    font-size: 16px; /* set the font size of the input fields */
+  }
+  
+  #get-in-touch button[type="submit"] {
+    background-color: #4CAF50; /* set the background color of the submit button */
+    color: white; /* set the text color of the submit button */
+    padding: 10px 20px; /* add some padding to the submit button */
+    border: none; /* remove the border from the submit button */
+    border-radius: 4px; /* add rounded corners to the submit button */
+    font-size: 16px; /* set the font size of the submit button */
+    cursor: pointer; /* add a pointer cursor to the submit button */
+    transition: background-color 0.3s ease; /* add a transition effect to the submit button background color */
+    margin-bottom: 30px;
+    margin-top: 5px;
+  }
+  
+  #get-in-touch button[type="submit"]:hover {
+    background-color: red; /* change the background color of the submit button on hover */
+  }
+
+
+  .form1 {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+
+  .cont{
+    color: red;
+    font-size: 20px;
+  }
+
+  .cont:hover{
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+  }
+  
+  
+
+  /* Footer */
+  footer {
+
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: rgb(4, 4, 59);
+    
+  }
+  
+  .block {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+  }
+  
+  .block:last-child {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .logo img {
+    max-width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .about {
+    margin-top: 10px;
+  }
+
+  .vision{
+    color: red;
+    margin-top: 30px;
+    margin-bottom: 3px;
+    font-weight: bold;
+  }
+  
+  .about p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .social-media img {
+    max-width: 30px;
+    height: 20px;
+    margin-right: 10px;
+  }
+
+  .social{
+    max-width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .logo{
+    max-width: 30px;
+    height: 20px;
+  }
+
+  p{
+    margin-top: 5px;
+  }
+
+  .logo1{
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+
+
+  @media only screen and (max-width: 767px) {
+    /* Styles for mobile devices */
+    body {
+      font-size: 14px;
+    }
+    .header {
+      height: 60px;
+      padding: 10px;
+    }
+    .content {
+      margin: 0;
+    }
+  }
+  
